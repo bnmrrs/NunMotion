@@ -1,0 +1,20 @@
+NunMotion
+=========
+NunMotion is an Arduino library for interacting with a WiiMotionPlus and attached NunChuk.  It was adapted from Duckhead and Knuckles904's code found on the Arduino wiki (http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1248889032/45)
+
+
+Hardware Setup
+==============
+The WMP communicates over I2C using the Arduino Wire library.  Connections to the WMP are as follows:
+ _______
+| 1 2 3 |
+|       |
+| 6 5 4 |
+|_-----_|
+
+1 - Data - Arduino analog pin 4
+2 - Nothing
+3 - Arduino 5v or 3.3v (3.3v is recommended)
+4 - Clock - Arduino analog pin 5
+5 - Nothing
+6 - ground - Arduino ground pin
